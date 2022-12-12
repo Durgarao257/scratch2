@@ -1,0 +1,44 @@
+<template>
+    <lightning-card >
+        <div class="slds-m-around_medium">
+            <div class="parent-wrapper">
+            <button class="btn-left" onclick={handle} name="Agent">     Agent 11   </button>
+            <button class="btn-right" onclick={handle}>Policy Holder</button>
+            <br>
+            <br>
+            <button class="btn-left" onclick={handle}>Life Insurence </button>
+            <button class="btn-right" onclick={handle}>Moter Insurence</button>
+
+            <template for:each={datainfo} for:item="cd">
+              <div key={cd.name}>
+                name:{cd.name} ==> age:{cd.age}
+              </div>
+            </template>
+
+
+            <ul class="slds-m-around_medium">
+                <template for:each={getAgentList} for:item="car">
+                  <a href="#" class="list-group-item list-group-item-action" key={car.Name}
+                    >{car.Name}</a
+                  >
+                </template>
+              </ul>
+
+              <ul class="slds-m-around_medium">
+                <template for:each={programmingList} for:item="program">
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action"
+                    key={program.id}
+                    >{program.language}</a
+                  >
+                </template>
+              </ul>
+
+            
+           
+        </div>
+    </div>
+    </lightning-card>
+    
+</template>
