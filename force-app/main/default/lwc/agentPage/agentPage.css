@@ -1,0 +1,12 @@
+.parent-wrapper{
+    border: 5px solid rgba(0, 0, 255, 0.582);
+    margin: 25px 50px 75px 100px;
+    background-color: rgb(211, 134, 230);
+}
+.btn{
+    margin: 5px;
+    position: relative;
+    left: 45%;
+    border: 5px solid #73AD21;
+    padding: 10px;
+}
