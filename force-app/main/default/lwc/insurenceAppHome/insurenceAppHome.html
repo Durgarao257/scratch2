@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="HOME" icon-name="custom:custom21">
+        <div class="slds-var-m-around_medium">
+            <div class="parent-wrapper">
+            <button class="btn-left" name="agent" onclick={handle}>Agent</button>
+            <button class="btn-right" name="policy" onclick={handle}>Policy Holder</button>
+            <br>
+            <br>
+            
+          <button class="btn-left" name="LiC" onclick={handle}>Life Insurence </button>
+            <button class="btn-right"  name="mic" onclick={handle}>Moter Insurence</button>
+
+            <br><br>
+                
+            <ul class="slds-m-around_medium">
+             
+              <template for:each={p} for:item="cd">
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action"
+                  key={cd.name}
+                  > id  vvvv  :{cd.Name}</a
+                >
+              </template>
+
+              <template for:each={a} for:item="cd">
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action"
+                  key={cd.name}
+                  > id  :{cd.Name}</a
+                >
+              </template>
+            </ul>
+
+           </div>
+    </div>
+    </lightning-card>
+    
+</template>

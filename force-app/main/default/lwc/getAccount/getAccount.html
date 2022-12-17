@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Account Component">
+        <div >
+          <h1>find details herevvvvvvvvvvvvvvvvvvv</h1>
+          <template for:each={Accounts} for:item="cd">
+            <div key={cd.Name}>
+                {cd.Name}==>{cd.AccountNumber}==>{cd.Site}
+            </div>
+            
+
+
+          </template>
+          <button onclick={handle}>click</button>
+        </div>
+    </lightning-card>
+</template>
