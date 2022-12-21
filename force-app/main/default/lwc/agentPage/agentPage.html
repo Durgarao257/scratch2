@@ -1,9 +1,56 @@
 <template>
     <div class="parent-wrapper">
-        <button class="btn" onclick={handle}> Add Agent</button>
+        <button class="btn " onclick={handleAgent}> Add Agent</button>
         <br>
         <br>
-        <button class="btn" onclick={handle}>view Agent</button>
-    </div>
-    
+        <button class="btn " onclick={handleViewAgent}>view Agent1</button>
+   
+       <template if:true={Agentform}>   
+        <div class="child-wrapper">
+       <div class="text-wrapper" for="fname">First name           
+  <input type="text" id="name" name="Name" class="input-wrapper" value={formField.Name} onchange={changeHandler}></div><br>
+  <div class="text-wrapper" for="DOB">DOB            
+  <input type="Date" id="DOB" class="input-wrapper"  name="Dob" value={formField.Dob} onchange={changeHandler}></div><br>
+
+
+  <div class="text-wrapper" for="gender">Gender
+    <input type="Picklist" id="Gender" class="input-wrapper"  name="Gender" value={formField.Gender} onchange={changeHandler}></div><br>
+
+  <div class="text-wrapper" for="Phone">   Phone            
+  <input type="Phone" id="Phone" class="input-wrapper"  name="Phone" value={formField.Phone} onchange={changeHandler}></div><br>
+
+  <div class="text-wrapper" for="Email">Email           
+  <input type="Email" id="Email" class="input-wrapper"  name="Email" value={formField.Email} onchange={changeHandler}></div><br>
+
+  <lightning-button onclick={handle} label="Submit"></lightning-button> 
+  
+    </div> 
+</template>
+
+
+<template if:true={viewAgent}>
+
+    <div class="child-wrapper">
+       <div class="text-wrapper" for="fname">First name           
+  <input   name="name" class="input-wrapper" value={Agent_Name__c}></div><br>
+  <div class="text-wrapper" for="DOB">DOB            
+  <input  class="input-wrapper"  name="DOB" value={DOB__c}></div><br>
+
+
+  <div class="text-wrapper" for="DOB">Gender          
+    <input   class="input-wrapper"  name="Gender" value={Gender__c}></div><br>
+
+  <div class="text-wrapper" for="Phone">   Phone            
+  <input   class="input-wrapper"  name="Phone" value={Phone__c}></div><br>
+
+  <div class="text-wrapper" for="Email">Email           
+  <input   class="input-wrapper"  name="Email" value={Email__c}></div><br>
+
+  
+  
+    </div> 
+
+  </template>
+
+</div>
 </template>

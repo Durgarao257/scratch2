@@ -51,6 +51,16 @@ public with sharing class homeclass {
             throw new AuraHandledException(e.getMessage());
         }
     }
+    @AuraEnabled(cacheable=true)
+    public static list<agent__c>  myAgent(){
+        try {
+            
+            list<agent__c> c= [select Name,Agent_Name__c,Email__c,Phone__c, DOB__c,Gender__c FROM agent__c  limit 1];
+            return c;
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }  
 }
     
     
