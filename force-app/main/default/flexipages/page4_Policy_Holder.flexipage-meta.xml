@@ -3,14 +3,14 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>insurenceAppHome</componentName>
-                <identifier>c_insurenceAppHome</identifier>
+                <componentName>policyHolderPage</componentName>
+                <identifier>c_policyHolderPage</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>page1(HOME)</masterLabel>
+    <masterLabel>page4(Policy Holder)</masterLabel>
     <template>
         <name>flexipage:defaultAppHomeTemplate</name>
     </template>

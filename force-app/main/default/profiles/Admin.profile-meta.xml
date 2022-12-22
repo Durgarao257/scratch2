@@ -5,8 +5,31 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningBolt</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSales</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <classAccesses>
+        <apexClass>GetAccounts</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <classAccesses>
         <apexClass>helloWorldProgram</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>homeclass</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -48,6 +71,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Motor_Insurence__c.Motor_colour__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Motor_Insurence__c.Policy_Holder__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -212,6 +240,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Page2_Agent</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Policy_Holder__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -221,6 +253,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>page1_HOME</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>page4_Policy_Holder</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

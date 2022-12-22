@@ -2,28 +2,35 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>Tab</actionName>
-        <content>Insurence_app_Home</content>
+        <content>Home_Page_Default1</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
     </actionOverrides>
-    <brand>
-        <headerColor>#0070D2</headerColor>
-        <logo>insurence_imag</logo>
-        <logoVersion>1</logoVersion>
-        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
-    </brand>
-    <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
-    <label>Insurence App</label>
-    <navType>Standard</navType>
-    <tabs>page1_HOME</tabs>
-    <tabs>Page2_Agent</tabs>
-    <tabs>page4_Policy_Holder</tabs>
+    <label>Salesforce CMS</label>
+    <navType>Console</navType>
+    <tabs>standard-CmsAuthorHome</tabs>
+    <tabs>standard-CmsChannel</tabs>
+    <tabs>standard-CmsWorkspaces</tabs>
+    <tabs>standard-CmsExperiences</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>Insurence_App_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>standard-CmsAuthorHome</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-CmsChannel</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-CmsExperiences</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-CmsWorkspaces</tab>
+        </mappings>
+    </workspaceConfig>
 </CustomApplication>
