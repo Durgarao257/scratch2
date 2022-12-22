@@ -1,11 +1,45 @@
 <template>
     <div class="Parent-wrapper">
-        <div class="slds-p-around_medium">
-        <a href="##" style="color:aliceblue; font-size: 30px;" class="slds-text-heading-large">Enter PolicyHolder</a>
-        <input type="text"  placeholder="Placeholder text…" onchange={handle} class="slds-input" />
+        <div class="child-wrapper">
+            <label for="fname">Enter PolicyHolder ID:</label>
+        <input type="id" value={phId} onkeyup={handle} />
     </div>
         <br>
         <br>
         <button class="btn" onclick={submitHandle}>  Submit  </button>
+    </div>
+    <div>
+        <template if:true={showdata}>
+            <table>
+                <thead>
+                <tr>
+                    <th>policy Id</th>
+                    <th>Policy Type</th>
+                    <th>Premium Amount</th>
+                    <th>Due Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template for:each={lifeData} for:item="cd">
+                    <tr key={cd.Name}>
+                        <td>{cd.Name}</td>
+                        <td>lifeType</td>
+                        <td>{cd.PremiumAmount__c}</td>
+                        <td>{cd.Due_Date__c}</td>
+                    </tr>
+                  </template>
+
+                  <template for:each={MotorData} for:item="cd">
+                    <tr key={cd.Name}>
+                        <td>{cd.Name}</td>
+                        <td>motorType</td>
+                        <td>{cd.Premium_Amount__c}</td>
+                        <td>{cd.Due_Date__c}</td>
+                    </tr>
+                  </template>
+
+                </tbody>
+            </table>
+        </template>
     </div>
 </template>

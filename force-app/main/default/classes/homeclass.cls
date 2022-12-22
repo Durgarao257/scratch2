@@ -61,6 +61,28 @@ public with sharing class homeclass {
             throw new AuraHandledException(e.getMessage());
         }
     }  
+    //-----------------------------------------------------------------------------
+    @AuraEnabled(cacheable=true)
+    public static List<Life_Insurence__c> lifeData(id data){
+        try {
+            return [select Name,PremiumAmount__c,Due_Date__c FROM Life_Insurence__c where Policy_Holder__c=:data ];
+
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
+
+    //----------------------------------------------------------------------------
+    @AuraEnabled(cacheable=true)
+    public static List<Motor_Insurence__c> MotorData(id data){
+        try {
+            return [select Name,Premium_Amount__c,Due_Date__c FROM Motor_Insurence__c where Policy_Holder__c=:data ];
+
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
+
 }
     
     
