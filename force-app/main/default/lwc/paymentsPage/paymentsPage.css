@@ -1,0 +1,24 @@
+.parent-wrapper{
+    border: 2px solid red;
+    margin: 10px 300px;
+    border-radius: 25px;
+    padding: null;
+    background-color: rgb(32, 89, 155);
+}
+.label{
+border: 1px solid red;
+margin: 20px; ;
+padding: 2px;
+color: white;
+font-size: medium;
+
+text-align: left;
+}
+input{
+    border:1px solid blue;
+    border-radius: 20px;
+    width: 50%;
+    padding: 2px;
+    text-align: left;
+    align:right;
+}

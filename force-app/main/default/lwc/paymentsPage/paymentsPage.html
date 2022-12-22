@@ -1,0 +1,19 @@
+<template>
+    <div class="parent-wrapper">
+        <br><br>
+        <label class="label" name="type">Insurence type      :</label>
+        <input name="type" type='picklist' value={formFields.type} onchange={changeHandler}><br><br><br>
+        <label class="label"  name="id">Insurence policy id:   </label>
+        <input name="id" value={formFields.id} type='text' onchange={changeHandler}><br><br><br>
+        <label class="label" name="Amount">Amount</label>
+        <input name="Amount" value={formFields.Amount} type='text' onchange={changeHandler}><br><br><br>
+       <label class="label" name="Date">Date   </label>
+       <input name="Date" type='Date' value={formFields.Date} onchange={changeHandler}><br><br><br>
+      
+      
+      
+
+       <button style="border:2px solid red; margin: 20px 100px ; width: 30%;" onclick={submit}>Submit</button>
+
+    </div>
+</template>
